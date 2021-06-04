@@ -1,0 +1,45 @@
+
+#progressBar{
+    width: 100%;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: solid 2px #CCC;
+}
+
+#progressBorder{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 17%;
+    height: 0;
+    border-bottom: solid 2px #555;
+}
+
+.progressPosition{
+    position: relative; 
+    text-align: center;
+    width: 33%;
+    padding: 0 2px;
+}
+
+.progressPosition .circle{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+	transform: translate(-50%, 26px);
+	width: 20px;
+	height: 20px;
+    font-size: 40px;
+	border-radius: 100%;
+    background-color: #FFF;
+    border: solid 2px #CCC;
+}
+
+@media only screen and (max-width: 290px){
+    #progressBar{
+        display: none !important;
+    }
+}
